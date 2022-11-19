@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    max-width: 1000px;
+    height: 25.81rem;
+    border-radius: 8px;
+}
+
+.left {
+    padding: 2rem 3rem;
+}
+
+.left h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 2.4rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.left h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.left p {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    padding-right: 1rem;
+}
+
+.bottom-left {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -3.2rem;
+}
+
+.bottom-left ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.bottom-left li {
+    margin: 0 1rem;
+    padding-right: 2rem;
+}
+
+.bottom-left h2 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400; 
+    justify-content: left; 
+    text-align: left;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .7rem;
+    font-weight: 400;
+    letter-spacing: .02rem;
+    margin-top: -1rem;
+}
+
+img {
+    width: 500px;
+    border-radius: 0 8px 8px 0;
+    opacity: .5;
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        flex-direction: column-reverse;
+        max-width: 90vw;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .left {
+        padding: .2rem;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        max-width: 90vw;
+        height: 20rem;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .bottom-left ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;  
+    }
+
+
+}
