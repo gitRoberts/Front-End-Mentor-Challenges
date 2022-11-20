@@ -1,0 +1,188 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+
+/* Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+
+  $149.99
+  $169.99
+
+  Add to Cart 
+  
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    min-width: 550px;
+    height: 375px;
+    min-height: 375px;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+  }
+
+  .product-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 400px;
+    height: 375px;
+    width: 250px; 
+  }
+
+  img {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    flex: 1 0 400px;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 400px;
+  }
+
+  .product-info-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 0 250px;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 350px;
+    margin: auto 0;
+  }
+
+  .product-info-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+  }
+
+  .product-info-title h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: black;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .product-info-title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+    padding-right: 15px;
+    line-height: 22px;
+  }
+
+  .product-info-title h3 {
+    display: flex;
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 12px;
+  }
+
+  .product-info-title h3 span {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: none;
+    align-self: flex-start;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+  }
+
+  .product-info-title a {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    flex: 1 0 auto;
+    cursor: pointer;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .product-info-title a img {
+    padding-right: 8px;
+  }
+
+
