@@ -1,0 +1,167 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+
+/* font-family: 'Outfit', sans-serif;
+
+
+
+0.041 ETH
+3 days left
+
+Creation of Jules Wyvern */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 8px;
+}
+
+.image {
+    flex: 1 0 350px;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 90%;
+    height: 90%;
+    max-width: 350px;
+    max-height: 300px;
+    border-radius: 8px;
+    
+}
+
+.information {
+    flex: 1 0 225px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.information h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    padding: 4px 16px;
+}
+
+.information h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    padding: 10px 16px;
+}
+
+.subInformation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+
+.subInformation h2:first-child {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.subInformation h2:last-child {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    justify-self: right;
+}
+
+.subInformation img {
+    transform: translateY(2px);
+}
+
+.information hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+    padding: 10px 16px;
+}
+
+.userInfo img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.userInfo span {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+
+/* Media Query for Mobile @375px*/
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 350px;
+    }
+}
+
