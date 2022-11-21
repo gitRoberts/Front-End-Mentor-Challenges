@@ -1,0 +1,215 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+- font-family: 'League Spartan', sans-serif;
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 400, 500, 700 */
+
+
+/*Mobile First Design Perspective with media @ 375px*/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.container,
+.title-portion,
+.star-ratings,
+.person-ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.title-portion {
+    height: auto;
+    max-height: 300px;
+}
+
+.title-portion div {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0 50px;
+}
+
+.title-portion h2 {
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.title-portion p {
+    color: hsl(303, 10%, 53%);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 34px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.star-ratings-individual {
+    width: 100%;
+    max-width: 275px;
+    padding: 8px 0;
+    margin-bottom: 10px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+}
+
+.star-ratings-individual div {
+    text-align: center;
+    letter-spacing: 8px;
+    margin-bottom: 5px;
+}
+
+.star-ratings-individual h2 {
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.person-ratings-individual {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    background-color:hsl(300, 43%, 22%);
+    color: white;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 275px;
+    height: 200px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.person-ratings-individual div img {
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+.person-ratings-individual h3 {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.person-ratings-individual h3:nth-child(2) {
+    color: hsl(333, 80%, 67%);
+}
+
+.person-ratings-individual p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+/*Media query for tablet view @ 670+px*/
+@media screen and (min-width: 670px) {
+    
+    .container {
+        flex-direction: row;
+        width: 100%;
+        max-width: 768px;
+        flex-wrap: wrap;
+    }
+
+    .title-portion,
+    .star-ratings {
+        margin-top: 30px;
+        flex: 0 0 384px;
+    }
+
+    .person-ratings {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 768px;
+        margin-top: 20px;
+        justify-content: space-around; 
+    }
+
+    .person-ratings-individual {
+        width: 100%;
+        max-width: 220px;
+        margin: 0 0;
+    }
+}
+
+/*Meida query for desktop view @ 1000+px*/
+@media screen and (min-width: 1000px) {
+
+    .title-portion h2 {
+        font-size: 35px;
+    }
+
+    .person-ratings {
+        margin-top: 80px;
+    }
+
+    .person-ratings-individual:nth-child(2) {
+        transform: translateY(15px);
+    }
+
+    .person-ratings-individual:nth-child(3) {
+        transform: translateY(30px);
+    }
+
+    .star-ratings {
+        transform: translateY(20px);
+    }
+
+    .star-ratings-individual:nth-child(2) {
+        transform: translateX(40px);
+    }
+
+    .star-ratings-individual:nth-child(3) {
+        transform: translateX(80px);
+    }
+
+}
