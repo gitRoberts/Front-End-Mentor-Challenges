@@ -1,0 +1,204 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Headings
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+
+## Icons
+
+We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+/* Shift the overall look and feel by adding these wonderful 
+touches to furniture in your home
+
+Ever been in a room and felt like something was missing? Perhaps 
+it felt slightly bare and uninviting. I’ve got some simple tips 
+to help you make any room feel complete.
+
+Michelle Appleton
+28 Jun 2020
+
+Share */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.container,
+.hero,
+.information {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+
+}
+
+.container {
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.hero {
+    background-image: url(./images/drawers.jpg);
+    background-size: 100% 100%;
+    flex: 1 0 200px;
+    border-radius: 12px 12px 0 0;
+}
+
+.information {
+    flex: 1 0 300px;
+    padding: 0 28px;
+    border-radius: 0 0 12px 12px;
+}
+
+.information h2 {
+    color: hsl(217, 19%, 35%);
+    font-size: 18px;
+    padding: 20px 0;
+}
+
+.information p {
+    color: hsl(212, 23%, 69%);
+    font-size: 14px;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.icon,
+.details,
+.social {
+    display: flex;
+    justify-content:center;
+}
+
+.icon {
+    flex: 1 0 50px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.details {
+    flex-direction: column;
+    padding-left: 20px;
+    flex: 8 0 50px;
+}
+
+.details h3 {
+    color: hsl(217, 19%, 35%);
+    font-size: 13px;
+}
+
+.details h4 {
+    color: hsl(212, 23%, 69%);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.social {
+    flex: 1 0 50px;
+}
+
+.social img{
+    width: 20px;
+    height: 20px;
+}
+
+.circle {
+    background: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 40px;
+    margin: 0 auto;
+  }
+  
+  .circle span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  /* Media Query for Tablet & Desktop @ 600px*/
+  @media screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        max-width: 680px;
+        border-radius: 12px;   
+    }
+
+    .hero {
+        background-size: 100% 100%;
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+        min-height: 270px;
+    }
+
+    .information {
+        border-radius: 0 12px 12px 0;
+    }
+
+    .author {
+        padding-bottom: 20px;
+    }
+  }
