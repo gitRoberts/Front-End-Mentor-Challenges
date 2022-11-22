@@ -1,0 +1,171 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container,
+.header,
+.order-summary,
+.plan {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: top;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    
+}
+
+.container {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.header {
+    flex: 1 0 170px;
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 16px 16px 0 0;
+}
+
+.order-summary {
+    flex: 1 0 400px;
+}
+
+.order-summary h1 {
+    font-size: 24px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: .4px;
+    padding: 0 28px;
+    margin-bottom: 10px;
+}
+
+.plan {
+    flex: 1 0 70px;
+    width: 80%;
+    max-width: 340px;
+    margin: 25px;
+    flex-direction: row;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 8px;
+}
+
+.icon {
+    margin: auto 0;
+    padding: 0 20px;
+}
+
+.details {
+    margin: auto 0;
+    max-height: 55px;
+    padding-right: 30px;
+}
+
+.details h3 {
+    color: hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-weight: 900;   
+}
+
+.details h4 {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 500;   
+}
+
+.change a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.payment,
+.cancel {
+    width: 80%;
+    padding: 13px 0;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cancel {
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+a {
+    cursor: pointer;
+}
