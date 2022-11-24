@@ -109,7 +109,7 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    flex: 0 0 50px;
+    height: 50px;
     margin-top: 20px;
     width: 100%;
     max-width: 340px;
@@ -156,6 +156,7 @@ body {
 .social img{
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 .circle {
@@ -179,7 +180,66 @@ body {
     padding: 0 12px;
   }
 
-  /* Media Query for Tablet & Desktop @ 600px*/
+  .hidden {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    max-width: 340px;
+    height: 0px;
+    overflow: hidden;
+    border-radius: 0 0 12px 12px;
+    background-color: hsl(217, 19%, 35%);
+    
+  }
+
+  .hidden p {
+    color: white;
+    font-size: 13px;
+    font-weight: none;
+    letter-spacing: 2px;
+    margin-left: 30px;
+  }
+
+  .hidden ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  .hidden ul li {
+    margin: 0px 12px;
+    padding-top: 5px;
+  }
+
+.hidden .social img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hidden .social .circle {
+    background: hsl(212, 23%, 69%);
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 40px;
+    margin: 0 auto;
+  }
+  
+  .hidden .social .circle span {
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  /* Media Query for Tablet & Desktop @ 700px*/
   @media screen and (min-width: 700px) {
     .container {
         flex-direction: row;
