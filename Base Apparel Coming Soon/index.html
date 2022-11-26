@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Bryan Roberts">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="./app.js" defer></script>
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="left">
+        <img src="./images/logo.svg" alt="">
+        <h1><span>We're</span> Coming Soon</h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+        <form class="form" id="form">
+          <div class="form-control">
+            <input type="email" placeholder="Email Address" id="email" />
+            <img class="error-icon" src="./images/icon-error.svg" alt="">
+            <button><img src="./images/icon-arrow.svg"></button>
+            <small>Please Provide a valid email</small>
+          </div>
+        </form>
+      </div>
+      <div class="right">
+        <picture>
+          <source media="(min-width: 375px)" srcset="./images/hero-desktop.jpg">
+          <img src="./images/hero-mobile.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

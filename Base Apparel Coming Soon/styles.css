@@ -1,0 +1,139 @@
+/* - Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(./images/bg-pattern-desktop.svg);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+}
+
+.left {
+    padding: 50px 100px 50px 70px;
+}
+
+.left img {
+    margin-bottom: 70px;
+    height: 30px;
+}
+
+.left h1 {
+    color: hsl(0, 6%, 24%);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.left h1 span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.left p {
+    color: hsl(0, 36%, 70%);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.left form {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.left form input {
+    padding: 12px 16px;
+    border: 1px solid hsl(0, 6%, 24%);
+    border-radius: 30px;
+    width: 100%;
+    font-family: inherit;  
+}
+
+.left form .form-control .error-icon {
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    height: 20px;
+    width: 20px;
+}
+
+.left form button {
+    position: absolute;
+    background-color: hsl(0, 36%, 70%);
+    border-radius: 30px;
+    padding: 0px 30px;
+    height: 39px;
+    top: 0px;
+    right: -5px;
+    cursor: pointer;
+}
+
+.left form button:hover {
+    background-color: hsl(0, 93%, 68%);
+}
+
+.left form button img {
+    height: 14px;
+    margin: auto auto;
+}
+
+.left form .form-control small {
+    visibility: hidden;
+    margin-left: 40px;
+}
+
+.right {
+    width: 100%;
+    max-width: 400px;
+}
+
+.right picture img {
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: hsl(0, 93%, 68%);
+}
+
+.form-control.error img.error-icon {
+	visibility: visible;
+}
+
+.left form .form-control.error small {
+    color: #e74c3c;
+	visibility: visible;
+}
