@@ -1,0 +1,198 @@
+
+/* - Red: hsl(0, 100%, 74%) 
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    background-color: hsla(0, 100%, 74%, .9);
+    background-image: url("./images/bg-intro-desktop.png");
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    min-height: 500px;
+}
+
+.container .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 350px;
+    margin: 30px;
+    color: white;
+}
+
+.container .left h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.container .left p {
+    font-size: 11px;
+}
+
+.container .right {
+    width: 100%;
+    min-width: 280px;
+    height: 100%;
+    min-height: 450px;
+    margin: 30px 10px;
+}
+
+.container .right .free-trial span {
+    font-weight: 700;
+}
+.container .right .free-trial {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 8px;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    font-size: 12px;
+    font-family: inherit;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.container .right .form {
+    background-color: white;
+    margin-top: 20px;
+    height: 100%;
+    min-height: 400px;
+    border-radius: 8px;
+}
+
+.container .right .form .form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: -15px 0px;
+}
+.container .right .form .form-control input:first-child {
+    margin-top: 25px;
+}
+
+.container .right .form .form-control input,
+.container .right .form .form-control button {
+    border: 1px solid hsl(246, 25%, 77%);
+    width: 85%;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: inherit;
+    margin: 10px 0px;
+    border-radius: 4px;
+}
+
+.container .right .form .form-control button {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.container .right .form-control p {
+    font-size: 8px;
+    margin-bottom: 25px;
+}
+
+.container .right .form-control p span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.container .right .form-control img {
+    position: absolute;
+    visibility: hidden;
+    top: 35px;
+    right: 50px;
+    height: 20px;
+    width: 20px;
+}
+
+.container .right .form-control .error-message {
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+    font-size: 10px;
+    font-weight: 500;
+    text-align: right;
+    margin-top: -5px;
+    width: 85%;
+}
+
+.container .right .form-control.error img,
+.container .right .form-control.error .error-message {
+    visibility: visible;
+}
+
+/*Media Query for Mobile @ 375px max-width*/
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        max-width: 330px;
+    }
+
+    .form {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .container .left h1,
+    .container .left p {
+        text-align: center;
+        margin: 0px 16px;
+    }
+
+    .container .left p {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: -10px;
+    }
+
+    .container .right .free-trial {
+        height: 90px;
+        font-size: 14px;
+        padding: 0px 80px;
+    }
+
+}
