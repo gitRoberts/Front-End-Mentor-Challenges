@@ -1,0 +1,96 @@
+/* ### Primary
+font-family: 'Open Sans', sans-serif; -- Headings
+font-family: 'Poppins', sans-serif; -- Body
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%) */
+
+/* ## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsla(257, 40%, 49%, .9);
+    color: white;
+    justify-content: center;
+    align-items:flex-start;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.container .logo {
+    align-self: flex-start;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.container div img {
+    max-width: 320px;
+    margin-bottom: 20px;
+}
+
+.container .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .information h1 {
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .information p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15.5px;
+    line-height: 28px;
+}
+
+.container .information a {
+    padding: 10px 70px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 35px;
+    width: 70%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 70px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 4px rgb(0, 0, 0, .2);
+}
+
+.container .information a:hover {
+    color: white;
+    background-color:hsl(300, 69%, 71%);
+}
