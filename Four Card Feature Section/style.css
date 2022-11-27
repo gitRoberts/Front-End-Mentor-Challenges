@@ -1,0 +1,140 @@
+/* - Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+    width: 85vw;
+    height: auto;
+}
+
+.title h3 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 24px;
+    color:hsl(229, 6%, 66%);
+}
+
+.title h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 20px;
+}
+
+.title p {
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 5px 8px 0px hsla(234, 12%, 34%, .2);
+    color: hsl(234, 12%, 34%);
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 25px;
+}
+
+.card-container h2 {
+    font-size: 20px;
+}
+
+.card-container p {
+    font-size: 12px;
+    color: hsl(229, 6%, 66%);
+}
+
+.card-container img {
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+/*Media query for desktop @ min-width of 1200px or greater*/
+@media screen and (min-width: 1200px) {
+    .card-container {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .title h3 {
+        font-size: 30px;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .title p {
+        max-width: 500px;
+    }
+
+    .supervisor,
+    .double,
+    .calculator {
+        margin: 0px 10px;
+    }
+
+}
