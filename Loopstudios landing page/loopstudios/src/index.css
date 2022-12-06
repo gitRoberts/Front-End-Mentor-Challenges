@@ -1,0 +1,312 @@
+/* - White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 0%)
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%) */
+
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;500;600;700&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(0, 0%, 55%);
+  --dark-gray: hsl(0, 0%, 41%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Alata', sans-serif;
+  font-size: 15px;
+  color: var(--gray);
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  font-family: 'Alata', sans-serif;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.header nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  min-height: 100vh;
+  transition: 1s ease;
+}
+
+.header nav.openMenu {
+  display: block;
+  
+}
+
+.header nav .nav-logo {
+  padding: 20px;
+}
+
+
+.header nav ul {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+#footer nav ul li,
+.header nav ul li {
+  margin-bottom: 20px;
+}
+
+.header nav ul li button {
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  
+}
+
+.header .menu-btn {
+  z-index: 999;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Showcase */
+.showcase {
+  background: url('./images/mobile/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+}
+
+.showcase .overlay {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  padding: 0 20px;
+}
+
+.showcase .overlay h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  max-width: 90vw;
+  line-height: 1.1;
+  border: 2px solid #fff;
+  padding: 24px;
+}
+
+/* Interactive */
+#interactive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#interactive img {
+  max-width: 90vw;
+  margin-bottom: 40px;
+}
+
+.interactive-text {
+  padding: 0px 30px;
+}
+
+#interactive h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#interactive p {
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Creations */
+
+.creations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.creations-container h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.creations-container .card-container {
+  position: relative;
+  max-width: 90vw;
+  margin: 15px 0px;
+}
+
+.creations-container .card-container h3 {
+  color: var(--white);
+  width: 100px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.btn-container {
+  margin-top: 20px;
+  border: 1px solid var(--dark-gray);
+  margin-bottom: 100px;
+}
+
+.btn-container .btn {
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 15px;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+/* Footer */
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100vw;
+  height: 525px;
+  background-color: var(--black);
+}
+
+#footer nav ul li button {
+  font-family: 'Alata', sans-serif;
+  font-size: 20px;
+}
+
+#footer nav {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#footer nav ul {
+  padding-top: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icons img {
+  margin: 20px 10px;
+}
+
+@media screen and (min-width: 1000px) {
+
+  .header {
+    padding: 40px 200px;
+  }
+  .showcase {
+    background: url('./images/desktop/image-hero.jpg');
+    height: 500px;
+    padding: 0px 200px;
+  }
+
+  .showcase .overlay {
+    height: 500px;
+  }
+  
+  .showcase .overlay h1 {
+    color: #fff;
+    font-size: 60px;
+    max-width: 550px;
+    padding: 24px;
+    margin-top: 100px;
+  }
+
+  #interactive {
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 40px;
+  }
+  
+  #interactive img {
+    margin: 40px 0px;
+    margin-left: 200px;
+    margin-right: 100px;
+  }
+  
+  .interactive-text {
+    padding: 30px;
+    background-color: var(white);
+    max-width: 700px;
+    margin-right: 150px;
+  }
+  
+  #interactive p {
+    margin-bottom: 10px;
+  }
+
+  .creations-container section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 180px;
+  }
+
+  .creations-container h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .creations-container .card-container {
+    max-width: 15vw;
+    margin: 15px 20px;
+  }
+
+}
