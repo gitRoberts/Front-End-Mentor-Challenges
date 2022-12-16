@@ -37,6 +37,7 @@
     font-family: var(--ff-Sans);
     font-weight: var(--fw-400);
     font-size: var(--fs-smaller);
+    color: var(--clr-dark-blue);
 }
 
 .btn {
@@ -91,9 +92,6 @@ nav {
     align-items: center;
 }
 
-header a {
-    color: var(--clr-dark-blue);
-}
 
 
 
